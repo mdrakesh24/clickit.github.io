@@ -338,6 +338,12 @@ footer a:hover{
         justify-content: center;
         align-items: center;
     }
+    .foot2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     footer{
         display: flex;
         flex-direction: column;
