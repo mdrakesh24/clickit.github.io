@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../image/home-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 0px;
+}
+nav .logo{
+    background-color: black;
+    background-size: contain;
+}
+.logo img{
+    max-width: 150px;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+ul a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+#search-bar{
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+#search-btn{
+    background-color: blue;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+#search-btn:hover{
+    background-color: lightblue;
+    color: black;
+    cursor: pointer;
+}
+
+h1{
+    color: white;
+    font-family: cursive;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px black;
+}
+h2:hover{
+    cursor:default;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.300);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 55px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 0px 200px 0px 0px;
+}
+.subcon{
+    display: flex;
+    flex-direction: row;
+}
+.subcon a{
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: indigo;
+    border-radius: 20px;
+}
+.subcon a:hover{
+    background-color:royalblue;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 80vh;
+}
+#fb{
+    background-color: #4267b2cb;
+    padding: 10px 0px;
+    margin: 15px 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+#fb:hover{
+    background-color: #4267B2;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+#fb a{
+    color: white;
+    font-size: 22px;
+}
+#ig{
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    padding: 10px 0px;
+    margin: 15px 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+#ig a{
+    color: white;
+    font-size: 22px;
+}
+#ig:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+#yt{
+    background-color: #ff0000c0;
+    padding: 10px 0px;
+    margin: 15px 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+#yt a{
+    color: white;
+    font-size: 22px;
+}
+#yt:hover{
+    background-color: #ff0000e2;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+#tt{
+    background-color: #00abeec5;
+    padding: 10px 0px;
+    margin: 15px 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+#tt a{
+    color: white;
+    font-size: 22px;
+}
+#tt:hover{
+    background-color: #00abee;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+
+/* Second Section Container 2 */
+.container2{
+    background-color: rgba(47, 79, 79, 0.500);
+}
+.container2 img{
+    width: 100%;
+}
+h2{
+    color: white;
+    background-color:#833ab4b1;
+    font-family: cursive;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+    padding: 20px 0px;
+}
+.first-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.first{
+    border: none;
+    margin: 20px;
+    width: 30%;
+    height: max-content;
+}
+.up{
+    background-color: rgba(245, 245, 245, 0.300);
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.down{
+    background-color: rgba(95, 158, 160, 0.300);
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.first p{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+h3{
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    font-family: cursive;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.600);
+    text-shadow: 2px 2px 2px black;
+    
+}
+input[type="submit"]{
+    background-color: lightgrey;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+    color: white;
+    background-color:#00abee;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    background-color: rgba(0, 0, 0, 0.750);
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 20px;
+    font-size: 18px;
+}
+footer a:hover{
+    color:lightblue;
+}
+
+/* Responsiveness */
+@media screen and (max-width:850px) {
+    body{
+        background-image: url("../image/home-back-sd.jpg");
+    }
+    header{
+        position: static;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0px;
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
+    }
+    .left{
+        padding: 0;
+        height: 40vh;
+    }
+    .right{
+        padding: 0;
+        height: 50vh;
+    }
+    h1{
+        text-align: center;
+        padding: 0px 2px;
+    }
+    h2{
+        text-align: center;
+        padding: 0px 2px;
+    }
+    .link{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    section img{
+        width: 100%;
+    }
+    .first-line{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first{
+        width: 90%;
+        height: max-content;
+        padding: 10px;
+        margin: 10px 0px;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
