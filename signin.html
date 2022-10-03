@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/signin.css">
-    <title>ClickIt | Sign in</title>
+    <title>ClickIt | Sign In</title>
 </head>
 <body>
-    <h1>Sign in Page</h1>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="image/logo.PNG" alt="Logo"></a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="signin.html">Sign In</a>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search here" id="search-bar">
+                <input type="submit" value="Search" id="search-btn">
+            </div>
+        </nav>
+    </header>
+    <main>
+    <div class="container">
+        <div class="content">
+            <h2>Sign In to ClickIt</h2>
+        <form method="get" action="">
+            <p>Email<input type="email" name="email" id="email" placeholder="yourname@gmail.com"></p>
+            <p>Password<input type="password" name="password" id="password" placeholder="*******"></p>
+            <p>
+                <input type="checkbox" name="robot" id="robot"> Remember me
+            </p>
+            <div class="btn">
+            <p>
+                <input type="submit" value="Sign In" >
+            </p>
+            </div>
+            <div class="google"><button> Sign In Using Google</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <a href="#">FAQ</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="foot2">
+            <a href="#">&copy; 2022 | ClickIt</a>
+            <a href="">by mdrakesh24</a>
+        </div>
+    </footer>
 </body>
 </html>
