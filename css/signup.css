@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../image/home-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 3px;
+}
+nav .logo{
+    background-color: black;
+    background-size: contain;
+}
+.logo img{
+    max-width: 150px;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+ul a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+#search-bar{
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+#search-btn{
+    background-color: black;
+    border: 2px solid seagreen;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#search-btn:hover{
+    background-color: seagreen;
+    color: white;
+    cursor: pointer;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.200);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90vh;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.left-cont{
+    background-color: rgba(128, 128, 128, 0.400);
+    border-radius: 5px;
+    padding: 20px;
+}
+h2{
+    color: white;
+    background-color: blueviolet;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+/* Form */
+form{
+    border-radius: 10px;
+    padding: 5px;
+}
+.header{
+    text-align: center;
+    font-size: 40px;
+}
+form p{
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight:normal;
+    color: white;
+    margin: 10px 0px;
+}
+.left input[type="text"],
+.left input[type="email"],
+.left input[type="password"]{
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0px;
+    font-size: 17px;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.left input[type="submit"]{
+    background-color:royalblue;
+    color: white;
+    width: 120px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20x;
+    font-size: medium;
+}
+.left input[type="submit"]:hover{
+    background-color: seagreen;
+    cursor: pointer;
+}
+
+/* Right Container */
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.right-cont{
+    background-color: rgba(128, 128, 128, 0.502);
+    border-radius: 5px;
+    padding: 10px;
+}
+.right1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 5px;
+    padding: 20px;
+}
+#fb{
+    background-color: #4267b2cb;
+    padding: 10px 0px;
+    margin: 15px 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+#fb:hover{
+    background-color: #4267B2;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+#fb a{
+    color: white;
+    font-size: 22px;
+}
+#ig{
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    padding: 10px 0px;
+    margin: 15px 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+#ig a{
+    color: white;
+    font-size: 22px;
+}
+#ig:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+#yt{
+    background-color: rgba(128, 128, 128, 0.776);
+    padding: 10px 0px;
+    margin: 15px 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+#yt a{
+    color: white;
+    font-size: 22px;
+}
+#yt:hover{
+    background-color: grey;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+#tt{
+    background-color: #00abeec5;
+    padding: 10px 0px;
+    margin: 15px 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+#tt a{
+    color: white;
+    font-size: 22px;
+}
+#tt:hover{
+    background-color: #00abee;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+
+/* Footer */
+footer{
+    background-color: rgba(0, 0, 0, 0.750);
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 20px;
+    font-size: 18px;
+}
+footer a:hover{
+    color:lightblue;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width:850px) {
+    body{
+        background-image: url("../image/home-back-sd.jpg");
+    }
+    header{
+        position: static;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0px;
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
+        height: max-content;
+    }
+    .left{
+        padding: 0;
+        height: max-content;
+        margin: 20px 0px;
+        width: 90%;
+    }
+    .left-cont{
+        padding: 15px 5px;
+    }
+    .right{
+        padding: 0;
+        height: max-content;
+        margin: 20px 0px;
+        width: 90%;
+    }
+    .right1{
+        padding: 15px 5px;
+    }
+    h1{
+        text-align: center;
+        padding: 0px 2px;
+    }
+    h2{
+        text-align: center;
+        padding: 0px 2px;
+    }
+    section img{
+        width: 100%;
+    }
+    .first-line{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first{
+        width: 90%;
+        height: max-content;
+        padding: 10px;
+        margin: 10px 0px;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .foot2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
