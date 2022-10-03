@@ -49,17 +49,19 @@ ul a:hover{
     padding: 10px;
     font-size: 15px;
     margin-right: 10px;
+    border: 2px solid white;
 }
 #search-btn{
-    background-color: blue;
+    background-color: black;
+    border: 2px solid seagreen;
     color: white;
     padding: 10px 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 15px;
 }
 #search-btn:hover{
-    background-color: #03d9ff;
-    color: black;
+    background-color: seagreen;
+    color: white;
     cursor: pointer;
 }
 
