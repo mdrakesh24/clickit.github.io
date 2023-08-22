@@ -1,93 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-body{
-    background-image: url("../image/home-back.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-header{
-    position: sticky;
-    top: 0px;
-}
-
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background-color: black;
-    padding: 3px;
-}
-nav .logo{
-    background-color: black;
-    background-size: contain;
-}
-.logo img{
-    max-width: 150px;
-}
-ul a{
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-}
-ul a:hover{
-    color: black;
-    background-color: white;
-    border-radius: 5px;
-}
-#search-bar{
-    background-color: white;
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-    font-size: 15px;
-    margin-right: 10px;
-    border: 2px solid white;
-}
-#search-btn{
-    background-color: black;
-    border: 2px solid seagreen;
-    color: white;
-    padding: 10px 10px;
-    border-radius: 5px;
-    font-size: 15px;
-}
-#search-btn:hover{
-    background-color: seagreen;
-    color: white;
-    cursor: pointer;
-}
 
 h1{
-    color: rgb(230, 240, 240);
-    background-color: rgba(42, 42, 42, 0.850);
     text-align: center;
-    padding: 10px;
-    font-size: 50px;
-    font-family:'Times New Roman', Times, serif;
-    font-style: italic;
-}
-h1:hover{
-    color: rgb(0, 187, 255);
-    cursor: pointer;
-    transition: all 2s;
+    margin: 10px 0px;
+    font-family: 'Signika Negative', sans-serif;
 }
 h2{
+    color: black;
     font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: ubuntu;
+    font-weight: 700;
 }
 h3{
     font-size: 25px;
+    color: black;
 }
 p{
     font-size: 17px;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -101,13 +30,8 @@ p{
     flex-direction: row;
     margin: 20px 0px;
     padding: 10px;
-    border: 2px solid midnightblue;
-    background-color:rgba(25, 25, 112, 0.700);
     border-left-style: none;
     border-right-style: none;
-}
-.fst h2{
-    color: darkorange;
 }
 .fstimg img{
     border-radius: 10px;
@@ -121,13 +45,8 @@ p{
     flex-direction: row;
     margin: 20px 0px;
     padding: 10px;
-    border: 2px solid indigo;
-    background-color: rgba(76, 0, 130, 0.700);
     border-left-style: none;
     border-right-style: none;
-}
-.snd h2{
-    color: rgb(0, 229, 255);
 }
 .sndimg img{
     border-radius: 10px;
@@ -141,14 +60,10 @@ p{
     flex-direction: row;
     margin: 20px 0px;
     padding: 10px;
-    border: 2px solid seagreen;
-    background-color:rgba(112, 128, 144, 0.700);
     border-left-style: none;
     border-right-style: none;
 }
-.trd h2{
-    color: brown;
-}
+
 .trdimg img{
     border-radius: 10px;
     margin: 15px 25px 15px 15px;
@@ -161,14 +76,10 @@ p{
     flex-direction: row;
     margin: 20px 0px;
     padding: 10px;
-    border: 2px solid teal;
-    background-color: rgba(0, 128, 128, 0.750);
     border-left-style: none;
     border-right-style: none;
 }
-.frth h2{
-    color: indigo;
-}
+
 .frthimg img{
     border-radius: 10px;
     margin: 15px 25px 15px 15px;
@@ -176,54 +87,17 @@ p{
     width: 300px;
 }
 
-/* Footer */
-footer{
-    background-color: rgba(0, 0, 0, 0.750);
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-footer a{
-    color: white;
-    text-decoration: none;
-    margin: 10px 20px;
-    font-size: 18px;
-}
-footer a:hover{
-    color:lightblue;
-}
-
-
 /* Responsiveness */
 @media screen and (max-width:850px) {
-    body{
-        background-image: url("../image/home-back-sd.jpg");
-    }
-    header{
-        position: static;
-    }
-    nav{
-        flex-direction: column;
-    }
-    .navbar ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .logo{
-        display: flex;
-        justify-content: center;
-        position: sticky;
-        top: 0px;
-        width: 100%;
-    }
+    
     .container{
         flex-direction: column;
         justify-content: center;
         padding: 0;
         align-items: center;
+    }
+    .container img:hover{
+        box-shadow: none;
     }
     .fst, .snd, .trd, .frth{
         flex-direction: column;
@@ -238,13 +112,15 @@ footer a:hover{
         padding: 0;
         height: max-content;
     }
-    h1{
-        text-align: center;
-        padding: 0px 2px;
-    }
     h2{
         text-align: center;
-        padding: 0px 2px;
+    }
+    h3{
+        text-align: center;
+    }
+    p{
+        padding: 0px 10px;
+        text-align: center;
     }
     section img{
         width: 100%;
@@ -261,21 +137,5 @@ footer a:hover{
         padding: 10px;
         margin: 10px 0px;
     }
-    .foot{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .foot2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    
 }
