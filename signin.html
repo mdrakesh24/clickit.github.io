@@ -8,35 +8,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/signin.css">
+    <link rel="stylesheet" href="css/common.css">
     <title>ClickIt | Sign In</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="image/logo.PNG" alt="Logo"></a>
-            </div>
-            <div class="navbar">
-                <ul>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="signin.html">Sign In</a>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" style="background-color: lightblue;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Click<span>It</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Join
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./signin.html">Log in</a></li>
+                      <li><a class="dropdown-item" href="./signup.html">Sign up</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./signup.html">Create a Account</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html#contact">Contact Us</a>
+                  </li>
                 </ul>
+                <form class="d-flex" role="search" id="log">
+                  <button class="btn btn-outline-success"><a href="./signin.html">Log In</a></button>
+                  <button class="btn btn-outline-success"><a href="./signup.html">Sign Up</a></button>
+                </form>
+              </div>
             </div>
-            <div class="search">
-                <input type="text" placeholder="Search here" id="search-bar">
-                <input type="submit" value="Search" id="search-btn">
-            </div>
-        </nav>
+          </nav>
     </header>
+
     <main>
-    <div class="container">
-        <div class="content">
-            <h2>Sign In to ClickIt</h2>
-        <form method="get" action="">
+    <div class="contain">
+      <div class="content">
+        <div class="left">
+          <h2>Sign In to ClickIt</h2>
+          <form method="get" action="">
             <p>Email<input type="email" name="email" id="email" placeholder="yourname@gmail.com"></p>
             <p>Password<input type="password" name="password" id="password" placeholder="*******"></p>
             <p>
@@ -47,23 +80,35 @@
                 <input type="submit" value="Sign In" >
             </p>
             </div>
-            <div class="google"><button> Sign In Using Google</button>
+            <div class="google"><button><i class="fa-brands fa-google"></i> Sign In Using Google</button>
+            </div>
+            <div class="facebook"><button><i class="fa-brands fa-facebook"></i> Sign In Using Facebook</button>
             </div>
         </form>
         </div>
+        <div class="right">
+          <img src="./image/login.png" alt="">
+        </div>
+      </div>
     </div>
     </main>
+
     <footer>
-        <div class="foot">
-            <a href="#">FAQ</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Contact Us</a>
-        </div>
-        <div class="foot2">
-            <a href="#">&copy; 2022 | ClickIt</a>
-            <a href="">by mdrakesh24</a>
-        </div>
-    </footer>
+      <div class="up-foot">
+          <div id="fb"><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></div>
+          <div id="ig"><a href="facebook.com"><i class="fa-brands fa-instagram"></i></a></div>
+          <div id="yt"><a href="facebook.com"><i class="fa-brands fa-youtube"></i></a></div>
+          <div id="tt"><a href="facebook.com"><i class="fa-brands fa-twitter"></i></a></div>
+      </div>
+      <div class="foot">
+          <a href="#">FAQ</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+      </div>
+      <div class="foot2">
+          <a href="#">All rights Reserved &copy; 2022 | ClickIt</a>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
