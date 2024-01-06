@@ -214,9 +214,9 @@ h3{
 @media screen and (max-width:850px) {
 
     .contain{
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
-        padding: 30px 0px;
+        padding: 0px 0px 20px 0px;
         align-items: center;
     }
     .left{
