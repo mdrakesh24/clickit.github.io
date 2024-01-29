@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Tilt+Neon&family=Ubuntu:wght@400;700&display=swap');
+
+
+body{
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 36px;
+    text-align: center;
+    margin: 40px 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.subcon form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+#search-input{
+    width: 100%;
+    max-width: 600px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.333);
+}
+
+#search-btn{
+    font-size: 18px;
+    padding: 10px;
+    background-color: #138065;
+    color: white;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.333);
+    cursor: pointer;
+}
+
+#search-btn:hover{
+    background-color: #0e6d55;
+    transition: all ease-in-out .3s;
+    transform: scale(1.1);
+}
+
+
+.result-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 70px;
+}
+
+.image-box{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.image-box img{
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+}
+
+.image-box:hover img{
+    transition: opacity ease-in-out 0.3s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.image-box:hover a{
+    text-decoration: underline;
+}
+
+.image-box a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    text-transform: capitalize;
+}
+
+#show-btn{
+    font-size: 18px;
+    padding: 10px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.333);
+    cursor: pointer;
+    text-align: center;
+    margin: 50px auto;
+    display: none;
+}
+
+#show-btn:hover{
+    background-color: #006c91;
+    transition: all ease-in-out 0.3s;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1150px){
+    .image-box{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .image-box{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:550px){
+    .result-box{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    h1{
+        font-size: 30px;
+    }
+    .image-box{
+        width: 100%;
+    }
+}

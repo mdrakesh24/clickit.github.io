@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Tilt+Neon&family=Ubuntu:wght@400;700&display=swap');
 /* Body Common */
 *{
     margin: 0;
@@ -14,7 +15,6 @@ header{
     position: sticky;
     top: 0px;
     z-index: 1;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.800);
 }
 .navbar-brand{
     font-family: ubuntu;
@@ -22,6 +22,7 @@ header{
     letter-spacing: 1.5px;
     font-size: 25px;
 }
+
 .navbar-brand span{
     color:#00abee;
 }
@@ -56,6 +57,26 @@ header{
 }
 
 /* Footer Common */
+footer{
+    background-color: rgba(0, 0, 0, 0.750);
+    padding: 20px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+footer h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 20px;
+    font-size: 16px;
+}
+footer a:hover{
+    color:lightblue;
+}
+
 .up-foot{
     display: flex;
     flex-direction: row;
@@ -70,33 +91,22 @@ header{
     font-size: 30px;
 }
 
-footer{
-    background-color: rgba(0, 0, 0, 0.750);
-    padding: 20px 0px 10px 0px;
+.down-foot{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
-footer a{
-    color: white;
-    text-decoration: none;
-    margin: 10px 20px;
-    font-size: 15px;
-}
-footer a:hover{
-    color:lightblue;
-}
+
 .foot2 a{
-    font-size: 13px;
+    font-size: 15px;
 }
 
 /* Responsiveness Common */
 @media screen and (max-width:850px) {
     .foot{
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
         align-items: center;
     }
     .foot2{
@@ -109,5 +119,10 @@ footer a:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .down-foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

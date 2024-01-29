@@ -12,93 +12,62 @@ h2{
     text-align: center;
     padding: 10px 0px;
 }
-h3{
-    font-size: 25px;
-    background-color: rgba(0, 0, 0, 0.700);
-    color: white;
-    text-align: center;
-    margin: 5px 0px;
-    padding: 5px 0px;
-}
-
 
 section img{
     max-width: 100%;
 }
-.port1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+img:hover{
+    transition: opacity ease-in-out 0.5s;
+    opacity: 0.8;
 }
-
-.port2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+.card{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border: none;
 }
-
-.sqr{
+.result-box{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.sqr .card{
-    width: 16rem;
-}
-
-.first-line{
-    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 30px 70px;
+}
+
+.image-box{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.image-box img{
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+}
+
+.image-box:hover img{
+    transition: opacity ease-in-out 0.3s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.image-box:hover a{
+    text-decoration: underline;
+}
+
+.image-box a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
     text-align: center;
-    height: 60vh;
-}
-.first{
-    border: none;
-    margin: 15px;
-    width: 100%;
-    height: max-content;
-}
-
-.second-line{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 80vh;
-}
-.second{
-    border: none;
-    margin: 15px;
-    width: 100%;
-}
-
-.third-line{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 60vh;
-}
-.third{
-    border: none;
-    margin: 10px;
-    width: 100%;
-}
-
-.fourth-line{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.fourth{
-    margin: 10px 0px;
-    width: 100%;
+    padding: 10px;
+    display: block;
+    text-transform: capitalize;
 }
 
 /* Responsiveness */
@@ -121,32 +90,31 @@ section img{
     section img{
         width: 100%;
     }
-    .port1{
-        flex-direction: column;
+}
+
+@media screen and (max-width: 1150px){
+    .image-box{
+        width: 40%;
     }
-    .port2{
-        flex-direction: column;
-    }
-    .sqr{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .sqr .card{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .first-line, .second-line, .third-line, .fourth-line{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: max-content;
-    }
-    .first, .second, .third, .fourth{
+}
+
+@media screen and (max-width: 800px){
+    .image-box{
         width: 90%;
-        height: max-content;
-        margin: 10px 0px;
     }
-    
+}
+
+@media screen and (max-width:550px){
+    .result-box{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    h1{
+        font-size: 30px;
+    }
+    .image-box{
+        width: 100%;
+    }
 }

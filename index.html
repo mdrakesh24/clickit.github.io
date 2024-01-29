@@ -18,13 +18,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/search.css">
     <title>ClickIt | Home</title>
 </head>
 <body>
 
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg" style="background-color: lightblue;">
+        <nav class="navbar navbar-expand-lg" style="background-color: white;">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Click<span>It</span></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,10 +54,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contents">Contents</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
+                    <a class="nav-link" href="./contact.html">Contact Us</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search" id="log">
@@ -73,96 +71,88 @@
             <div class="left">
                 <h1><span id="st">Focus</span>. <span id="nd">Click</span>. <span id="rd">Inspire</span>.</h1>
                 <br>
+                <p>Embark on a visual journey through     captivating moments frozen in time. <br>
+                Explore a world of emotions and stories captured through my lens</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3>Search Images Here</h3>
                 <div class="subcon">
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  <form action="">
+                    <input type="text" id="search-input" placeholder="Type here to search">
+                    <button id="search-btn">Search</button>
                   </form>
                 </div>
-                <br>
-                <p>Embark on a visual journey through captivating moments frozen in time. Explore a world of emotions and stories captured through my lens.</p>
             </div>
             <div class="right">
                 <img src="./image/home.png" alt="">
             </div>
         </section>
 
-        <section class="container2" id="contents">
-            <h2>Contents</h2>
-            <div class="first-line">
-                <div class="first" id="first1">
-                    <div class="up">
-                        <img src="./image/land1.jpg" alt="" >
-                        <h3>Landscapes</h3>
-                    </div>
-                    <div class="down">
-                        <img src="./image/pot2.jpg" alt="" >
-                        <h3>Nature</h3>
-                    </div>
-                </div>
-                <div class="first" id="first2">
-                    <div class="up">
-                        <img src="./image/sqr1.jpg" alt="">
-                        <h3>Sunset</h3>
-                    </div>
-                    <div class="down">
-                        <img src="./image/pot3.jpg" alt="">
-                        <h3>Evening Sky</h3>
-                    </div>
-                </div>
-                <div class="first" id="first3">
-                    <div class="up">
-                        <img src="./image/pot1.jpg" alt="" >
-                        <h3>Mountains</h3>
-                    </div>
-                    <div class="down">
-                        <img src="./image/land2.jpg" alt="" >
-                        <h3>River</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="result-box" id="come-here">
 
-        <section class="contact" id="contact">
-          <h2>Contact Us</h2>
-          <br>
-          <form action="submit">
-              <p>Name: <br> <input type="text" name="name" placeholder="Enter your Name"></p>
-              <p>Email: <br> <input type="email" name="email" id="email" placeholder="yourname@gmail.com"></p>
-              <p>Subject: <br> <select name="subject" id="subject">
-                  <option value="">Choose your Subject</option>
-                  <option value="order">Order Issue</option>
-                  <option value="refund">Money not refunded</option>
-                  <option value="delivery">Delivery not attepmted</option>
-                  <option value="other">Other</option>
-                  </select>
-              </p>
-              <p>Massage: <br> <textarea name="message" id="message" placeholder="Your Message to Us"></textarea></p>
-              <p><input type="submit" value="Send"></p>
-          </form>
-      </section>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D" alt="Photography image">
+                <a href="https://unsplash.com/photos/black-dslr-camera-floating-over-mans-hand-at-the-woods-WxM465oM4j4" target="_blank">Black DSLR camera floating over man's hand at the woods</a>
+            </div>
+    
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1704741252008-bc9930d84a0a?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sunlight on Mountains">
+                <a href="https://unsplash.com/photos/a-mountain-range-covered-in-snow-at-sunset-Q6sC80Wz3Kc" target="_blank">A mountain range covered in snow at sunset</a>
+            </div>
+    
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1706125356134-a20ea29b412b?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Forest Road">
+                <a href="https://unsplash.com/photos/a-man-walking-two-dogs-down-a-road-in-the-woods-BJWnlwnZSkw" target="_blank">A man walking two dogs down a road in the woods</a>
+            </div>
+    
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coding">
+                <a href="https://unsplash.com/photos/lines-of-html-codes-4hbJ-eymZ1o" target="_blank">HTML class=”3”</a>
+            </div>
+    
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="The last night of a two week stay on the North Shore of Oahu, Hawaii">
+                <a href="https://unsplash.com/photos/seashore-during-golden-hour-KMn4VEeEPR8" target="_blank">The last night of a two week stay on the North Shore of Oahu, Hawaii</a>
+            </div>
+    
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1525921429624-479b6a26d84d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Graduation. A Success.">
+                <a href="https://unsplash.com/photos/man-wearing-academic-gown-2RouMSg9Rnw" target="_blank">Graduation. A Success.</a>
+            </div>
+
+        </div>
+
+        <button id="show-btn">Show more</button>
 
     </main>
 
     <br>
 
     <footer>
+        <h3 class="text-light">Follow us on</h3>
         <div class="up-foot">
-            <div id="fb"><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></div>
-            <div id="ig"><a href="facebook.com"><i class="fa-brands fa-instagram"></i></a></div>
-            <div id="yt"><a href="facebook.com"><i class="fa-brands fa-youtube"></i></a></div>
-            <div id="tt"><a href="facebook.com"><i class="fa-brands fa-twitter"></i></a></div>
+          <div id="fb"><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+          <div id="ig"><a href="facebook.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+          <div id="yt"><a href="facebook.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
+          <div id="tt"><a href="facebook.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
         </div>
-        <div class="foot">
+        <div class="down-foot">
+          <div class="foot">
             <a href="#">FAQ</a>
             <a href="#">Terms of Use</a>
             <a href="#">Privacy Policy</a>
-        </div>
-        <div class="foot2">
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="foot2">
             <a href="#">All rights Reserved &copy; 2022 | ClickIt</a>
+          </div>
         </div>
     </footer>
-
+    
+    <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

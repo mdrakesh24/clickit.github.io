@@ -1,17 +1,20 @@
-
 .contain{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px 0px;
 }
 .content{
-    border-radius: 5px;
+    width: 40vw;
+    min-width: 600px;
     display: flex;
     flex-direction: row;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 h2{
-    color: white;
+    color: slateblue;
     padding: 10px 0px;
     width: 100%;
     text-align: center;
@@ -25,12 +28,12 @@ h2{
     align-items: center;
     width: 50%;
     background-color: darkslategray;
+    border-radius: 5px 0px 0px 5px;
 }
 .left form{
-    width: 60%;
-    padding: 20px;
-    border-radius: 5px;
-    border: 2px solid white;
+    width: 100%;
+    padding: 15px;
+    margin: 5px;
 }
 .content .right{
     width: 50%
@@ -48,20 +51,22 @@ h2{
     font-size: 17px;
     font-weight:normal;
     color: white;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 .content input[type="email"],
 .content input[type="password"]{
     width: 100%;
     padding: 5px;
-    margin: 10px 0px;
+    margin: 5px 0px;
     font-size: 17px;
+    border: none;
+    border-radius: 3px;
 }
 .btn{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .content input[type="submit"]{
     background-color:royalblue;
@@ -69,9 +74,9 @@ h2{
     width: 120px;
     border: none;
     border-radius: 4px;
-    padding: 10px;
+    padding: 7px;
     margin: 20x;
-    font-size: medium;
+    font-size: 18px;
     font-family: 'Signika Negative', sans-serif;
 }
 .content input[type="submit"]:hover{
@@ -108,17 +113,23 @@ h2{
 }
 
 /* Responsiveness */
-@media screen and (max-width:850px) {
+@media screen and (max-width:600px) {
+    .contain{
+        margin: 0px;
+    }
     .content{
         flex-direction: column;
         justify-content: center;
         padding: 0;
         align-items: center;
         width: 100%;
+        border: none;
+        min-width: 100px;
     }
     .content .left{
         padding: 10px 0px;
-        width: 100%;
+        width: 90%;
+        border-radius: 2px;
     }
     .content .left form{
         width: 90%;

@@ -1,0 +1,30 @@
+
+/* Section Contact Us */
+
+.shadow{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.contact h2{
+    color: black;
+    padding: 10px;
+    color: white;
+    font-family: sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.round{
+    border-radius: 10px 0px 0px 10px;
+}
+
+/* Responsiveness */
+@media screen and (max-width:767px) {
+    .small{
+        margin-top: 15px;
+    }
+    .round{
+        border-radius: 10px;
+    }
+}
